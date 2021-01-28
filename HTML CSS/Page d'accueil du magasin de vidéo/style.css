@@ -1,0 +1,27 @@
+body{
+    margin: -30px;
+    margin-left: -2.5rem;
+    width: fit-content;
+}
+
+
+
+ul{
+    width: auto;
+    float: right;
+    font-size: 14px;
+    margin-top: 40px;
+   
+    
+}
+li{
+    display: inline-block;
+    scroll-margin-right: 10;
+
+}
+  
+
+
+img{
+    margin-top: -8px;
+}
