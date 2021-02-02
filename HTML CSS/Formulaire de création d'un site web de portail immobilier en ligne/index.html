@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div class="container-body">
+            
+            <form action="index.html" class="formulaire">
+                <fieldset>
+                    <legend><h1 class="invitation-recherche">Faite votre recherche selon votre besoin:</h1></legend>
+                    <div>
+                        <label>
+                            <input type="text"name="Ville" id="Villeinput" placeholder="Ville, département ou région"autofocus>
+                        </label>
+                    </div>
+                    <div class="propriete">
+                        <div>
+                            <h2>Type de propriété:</h2>
+                            <label for="typedepropriete1">Appartement</label>
+                            <input type="checkbox" name="Appartement" id="typedepropriete1">
+                        </div>
+                        <div>
+                            <label for="typedepropriete2">Duplex</label>
+                            <input type="checkbox" name="Duplex" id="typedepropriete2">
+                        </div>
+                        <div>
+                            <label for="typedepropriete3">Studio</label>
+                            <input type="checkbox" name="Studio" id="typedepropriete3">
+                        </div>
+                        <div>
+                            <label for="typedepropriete4">Villa</label>
+                            <input type="checkbox" name="Villa" id="typedepropriete4">
+                        </div>
+                        <div>
+                            <label for="typedepropriete5">Maison</label>
+                            <input type="checkbox" name="Maison" id="typedepropriete5">
+                        </div>
+                        <div>
+                            <label for="typedepropriete6">Résidence</label>
+                            <input type="checkbox" name="Résidence" id="typedepropriete6">
+                        </div>
+                        <div>   
+                            <label for="typedepropriete7">Terain</label>
+                            <input type="checkbox" name="Terain" id="typedepropriete7">
+                        </div>
+                        
+                    </div>
+                    <div class="inclure">
+                        <label for="Inclure"><h2>Inclure les propriétés vendues</h2></label>
+                        <input type="checkbox" name="Inclure les propriétés vendues" id="Inclure"checked>
+                    </div>
+                    <div class="chambre">
+                        <h2>Chambres:</h2>
+                        <label for="chambre2">2</label>
+                        <input type="checkbox" name="2" id="chambre2">
+                        <label for="chambre3">3</label>
+                        <input type="checkbox" name="3" id="chambre3">
+                        <label for="chambre4ouplus">4 ou plus</label>
+                        <input type="checkbox" name="4 ou plus" id="chambre4ouplus">
+                    </div>
+                    <div class="rayon">
+                        <h2>Rayon de recherche:</h2>
+                        <input type="range" id="KM" name="KM">
+                        <label for="KM">100KM</label>
+                    </div>
+                    <div class="fourchete">
+                        <label for="fourchete"><h2>Fourchete de prix:</h2></label>
+                        <select name="fourchete" id="fourchete">
+                            <option>Entre 200 000.00 et 250 000.00 MAD</option>
+                            <option>Entre 250 000.00 et 500 000.00 MAD</option>
+                            <option>Entre 500 000.00 et 1 000 000.00 MAD</option>
+                            <option>1 000 000.00 MAD ou plus</option>
+                        </select>
+                    </div>
+
+                    <div class="button">
+                        <input type="button" value="Rechercher">
+                        <input type="reset" value="Annuler">
+                        <input type="search" placeholder="Recherche">
+                    </div>
+
+                </fieldset>
+            </form>   
+        </div>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-image: url(fond.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+
+.invitation-recherche{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal ;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: max-content;
+    padding: 15px;
+    color: gold;
+    border-style: ridge;
+    background-color: black;
+    border-color:black;
+    border-radius: 10px 100px / 120px;
+}
+
+.container-body{
+    text-align: center;
+    padding:100px;
+}
+
+fieldset{
+    padding: 50px;
+    font-size: 18px;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.329);
+}
+
+.propriete{
+    margin-top: 20px;  
+}
+
+.chambre{
+    margin-top: 20px;
+}
+
+.inclure{
+    margin-top: 20px;
+}
+
+.rayon{
+    margin-top: 20px;
+}
+
+.button{
+    margin-top: 20px;
+}
+
+.fourchete{
+    margin-top: 20px;
+}
