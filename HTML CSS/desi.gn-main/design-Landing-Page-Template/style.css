@@ -46,7 +46,7 @@ body{
  color: blue;
 }
 
-.header{
+header{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -583,31 +583,29 @@ h2{
 
 .footer{
     margin-top: 60px;
-    border-radius: 5px;
-    border-style: solid;
-    border-width: 2px;
+    border-radius: 25px;
     border-color: #CCC;
     height: 120px;
-    background: linear-gradient(to right, #0b48a8 35%, #fff3d9 100%);
+    background: linear-gradient(to right, #5f6368 35%, #fff3d9 100%);
     display: flex;
-    justify-content: space-around;    
+    justify-content: space-around; 
 }
 
 .container-footer{ 
-    background:linear-gradient(315deg, #f9484a 0%, #fbd72b 74%);  
+    background: linear-gradient(192deg, #fffcdf 0%, #e9cfac 74%);
     height: 40px;
-    width: 400px;
+    width: 700px;
     border-width: 2px;
-    border-color:gray;
+    border-color: gray;
     border-radius: 25px;
     text-align: center;
-    box-shadow: 0px 5px 10px #CCC;
     margin: auto;
+
 } 
 
 .footertxt{
     font-family: 'Poppins',serif;
-    margin-top: 5px;  
+    margin-top: 8px;  
 }
 
 
