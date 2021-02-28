@@ -1,0 +1,271 @@
+@media (max-width :800px){
+    /* *{
+        font-size: 12px;
+        zoom: .8;
+    } */
+    header, .section1, .section2 ,.prixstart, .prixbusi, .footer{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .logo{
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+        color: #13366D;
+        cursor: pointer;
+        transition: 0.3s;
+        
+    }
+
+    
+/* #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+  }
+  
+  
+.menu__btn{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 20px;
+    left: 20px;
+  
+    width: 26px;
+    height: 26px;
+  
+    cursor: pointer;
+    z-index: 1;
+  }
+  #menu__toggle {
+    opacity: 0;
+  }
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+  
+    width: 100%;
+    height: 2px;
+  
+    background-color: #616161;
+  
+    transition-duration: .25s;
+  }
+  .menu__btn > span::before {
+    content: '';
+    top: -8px;
+  }
+  .menu__btn > span::after {
+    content: '';
+    top: 8px;
+  } */
+
+  .btn2 {
+    text-align: center;
+    color: aliceblue;
+    display: block;
+    padding: 12px 24px;
+}
+  
+  .menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+  
+    width: 300px;
+    height: 100%;
+  
+    margin: 0;
+    padding: 80px 0;
+  
+    list-style: none;
+  
+    background-color: #ECEFF1;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  
+    transition-duration: .25s;
+  }
+  
+  .menu__item {
+    display: block;
+    padding: 12px 24px;
+  
+    color: #333;
+  
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+  
+    text-decoration: none;
+  
+    transition-duration: .25s;
+  }
+  .menu__item:hover {
+    background-color: #CFD8DC;
+  }
+
+  header{
+      display: none;
+  }
+
+  .head{
+      display: block;
+  }
+
+  .section4 {
+    width: auto;
+}
+
+.section1 {
+    display: flex;
+    justify-content: space-between;
+    height: 108%;
+    flex-direction: column;
+    height: auto;
+}
+
+.left {
+    width: unset;
+    height: unset;
+    margin-top: 180px;
+}
+
+.titre {
+    font-family: 'karla', sans-serif;
+    color: #13366D;
+    font-size: x-large;
+    font-size: 3.5rem;
+    text-align: center;
+    height: 18rem;
+    padding: 0.5rem;
+  
+}
+
+.carte1, .carte2 , .carte3, .carte4 {
+    width: unset; 
+    height: unset;
+    text-align: center;
+    margin: 1rem 9rem 1rem 9rem;
+}
+
+.txt-title {
+    font-size: 5rem;
+}
+
+.icon {
+    width: 12rem;
+    height: 12rem;
+}
+
+.textecarte{
+    line-height: 61px;
+    font-size: 2.5rem;
+    padding: 2.5rem 3rem 3rem 3rem;
+}
+
+.section2{
+    gap: 25px;
+}
+
+.texte {
+    width: 1200px;
+    color: #A2A2A2;
+    font-family: 'karla', sans-serif;
+    padding-top: 10px;
+    line-height: 7rem;
+    /* font-size: 0rem; */
+    padding: 1rem;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.inputmailbtn {
+    padding-top: 10px;
+    display: flex;
+    padding: 1rem 1rem 1rem 7rem;
+    width: 1040px;
+}
+
+input[type=email] {
+    width: 76%;
+    height: 5rem;
+    background-color: white;
+    border-radius: 5px;
+    margin-right: 15px;
+    cursor: pointer;
+    font-size: 3rem;
+    padding-left: 1rem;
+}
+
+
+.btn2 {
+    text-align: center;
+    color: aliceblue;
+    /* display: block; */
+    padding: 20px 24px;
+    font-size: 2rem;
+}
+
+
+.gar {
+    display: flex;
+    font-family: 'karla',sans-serif;
+    color: #A2A2A2;
+    font-size: 39px;
+    padding: 2rem 1rem 1rem 4.5rem;
+}
+
+.check1 {
+    padding-right: 14px;
+    width: 5%;
+}
+
+.check2 {
+    padding-right: 5px;
+    width: 5%;
+}
+
+.right {
+    display: none;
+}
+.section4{
+    display: flex;
+    margin-top: 35rem;
+    flex-direction: column;
+}
+
+.borderstartup{
+    width: 400px;
+}
+
+.startup {
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    color: #CCC;
+    background-color: #FFF3D9;
+    margin: 4rem;
+    height: auto;
+    width: auto;
+}
+
+.textecarte1, .textecarte2, .textecarte3, .textecarte4 {
+    line-height: 90px;
+    letter-spacing: 1px;
+}
+
+.section2 {
+    gap: 91px;
+    font-size: 3rem;
+    line-height: 11rem;
+}
+
+.reqpng, .quiqpng, .revpng, .donepng {
+    margin-bottom: -8px;
+    width: 16%;
+}
+}
