@@ -1,6 +1,7 @@
 <?php
-session_start();
 session_destroy();
+session_start();
+
 include_once('database.php');
 
 
@@ -12,7 +13,8 @@ $mail2 = $_POST['mail2'];
 $pwd = $_POST['mdp'];
 $pwd2 = $_POST['mdp2'];
 
-if (!empty($nom) && !empty($prenom) && !empty($pseudo) && !empty($mail) && !empty($mail2) && !empty($pwd) && !empty($pwd2)) {
+
+if (!empty($nom) && !empty($prenom) && !empty($pseudo) && !empty($mail) && !empty($pwd)) {
 
 
     $req = ("INSERT INTO inscriminiboite ( `nom`, `prenom`, `pseudo`, `mail`, `motdepasse`) VALUES ('" . $nom . "','" . $prenom . "','" . $pseudo . "','" . $mail . "','" . $pwd . "')");
@@ -24,8 +26,10 @@ if (!empty($nom) && !empty($prenom) && !empty($pseudo) && !empty($mail) && !empt
     if ($pro) {
         header('location:login.php');
     } else {
-        echo "something went wrong";
+        $_SESSION["error"] =  "Quelque chose est incorrect";
+        header('location:inscription.php');
     }
 } else {
-    echo "Field";
+    $_SESSION["error"] =  "Merci de remplir les champs";
+    header('location:inscription.php');
 }

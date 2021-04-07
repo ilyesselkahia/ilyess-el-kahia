@@ -17,7 +17,9 @@ if (!empty($_POST['message'])) {
 
 
     $req = ("INSERT INTO messages(utilisateur, contenu_message) VALUES ('" . $pseudo . "','" . $_POST['message'] . "')");
+   // ====execution=====
     $pro = mysqli_query($link, $req);
+    
     header('Location: index.php');
 } else {
     header('Location: index.php');

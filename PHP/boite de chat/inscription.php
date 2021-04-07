@@ -1,5 +1,12 @@
 <?php
 include_once('database.php');
+session_start();
+if (!empty($_SESSION["error"])) {
+    $errr = $_SESSION["error"];
+} else {
+    $errr = "";
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -9,86 +16,95 @@ include_once('database.php');
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>inscription</title>
+    <link rel="stylesheet" href="css/styleins.css">
+    <title>Inscription</title>
 </head>
 
 <body>
-    <main>
-        <div align="center">
-            <form action="traitinscri.php" method="POST">
-                <fieldset>
-
-                    <legend align="center">
-                        <h1>Inscription</h1>
-                    </legend>
-                    <table>
-                        <tr>
-                            <td align="right">
-                                <label for="nom">Nom :</label>
-                            </td>
-                            <td>
-                                <input type="text" placeholder="Votre nom" name="nom" id="nom" autofocus>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td align="right">
-                                <label for="prenom">Prénom :</label>
-                            </td>
-                            <td>
-                                <input type="text" placeholder="Votre prenom" name="prenom" id="prenom">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td align="right">
-                                <label for="pseudo">Pseudo :</label>
-                            </td>
-                            <td>
-                                <input type="text" placeholder="Votre pseudo" name="pseudo" id="pseudo">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td align="right">
-                                <label for="mail">Email :</label>
-                            </td>
-                            <td>
-                                <input type="email" placeholder="Votre mail" name="mail" id="mail">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td align="right">
-                                <label for="mail2">Confirmation du mail :</label>
-                            </td>
-                            <td>
-                                <input type="email" placeholder="Confirmer votre mail" name="mail2" id="mail2">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td align="right">
-                                <label for="mdp">Mot de passe :</label>
-                            </td>
-                            <td>
-                                <input type="password" placeholder="Votre mot de passe" name="mdp" id="mdp">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td align="right">
-                                <label for="mdp2">Confirmation du mot de passe :</label>
-                            </td>
-                            <td>
-                                <input type="password" placeholder="Confirmer votre MDP" name="mdp2" id="mdp2">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td align="center"><br><input type="submit" value="Je m'inscris" name="formins"></td>
-                        </tr>
-                    </table>
+    <h1>Inscription</h1>
+    <p><?php echo $errr;
+        session_destroy(); ?></p>
+    <form action="traitinscri.php" method="POST">
+        <div class="frm">
+            <label class="eye" for="nom">
+                <input type="text" placeholder="Votre nom" name="nom" id="nom" autofocus>
+            </label>
 
 
-                </fieldset>
-            </form>
         </div>
-    </main>
+        <div class="frm">
+
+            <label class="eye" for="prenom">
+                <input type="text" placeholder="Votre prenom" name="prenom" id="prenom">
+            </label>
+
+
+
+        </div>
+        <div class="frm">
+            <label class="eye" for="pseudo">
+                <input type="text" placeholder="Votre pseudo" name="pseudo" id="pseudo">
+            </label>
+
+
+
+        </div>
+        <div class="frm">
+            <label class="eye" for="mail">
+                <input type="email" placeholder="Votre mail" name="mail" id="mail">
+            </label>
+
+
+
+        </div>
+        <!-- <div class="frm">
+            <label class="eye" for="mail2">
+                <input type="email" placeholder="Confirmer votre mail" name="mail2" id="mail2">
+            </label> -->
+
+
+
+        </div>
+        <div class="frm">
+            <label class="eye" for="mdp">
+                <input type="password" placeholder="Votre mot de passe" name="mdp" id="mdp">
+                <div class="password-icon">
+                    <i data-feather="eye"></i>
+                    <i data-feather="eye-off"></i>
+                </div>
+
+
+            </label>
+
+
+
+        </div>
+        <!-- <div class="frm">
+            <label class="eye" for="mdp2">
+                <input type="password" placeholder="Confirmer votre mot de passe" name="mdp2" id="mdp2">
+                <div class="password-icon">
+                    <i data-feather="eye" class="eye"></i>
+                    <i data-feather="eye-off" class="eyeoff"></i>
+                </div>
+            </label>
+
+
+
+        </div> -->
+
+
+        <button type="submit" name="formins">Je m'inscris</button>
+        <button type="reset">Réinitialiser</button>
+
+
+
+
+
+    </form>
+
+
 </body>
+<script src="https://unpkg.com/feather-icons"></script>
+<script src="js/main.js"></script>
 
 </html>

@@ -12,15 +12,13 @@ body {
 
 h1 {
     margin-top: 48px;
-    font-family: fantasy;
-    letter-spacing: 10px;
 }
 
 form {
     background-color: #1A2226;
     max-width: 360px;
     width: 100%;
-    padding: 40px 40px;
+    padding: 58px 44px;
     border-radius: 10px;
     box-shadow: 0 0 5px 0 rgba(42, 45, 48, 0.12);
     transition: all 0.3s ease;
@@ -29,50 +27,45 @@ form {
 .frm {
     display: flex;
     flex-direction: column;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
-/* .frm label {
+.frm label {
     font-size: 16px;
     color: #d98324;
+    
+}
 
-} */
-
-/* .frm input {
+.frm input {
     flex: 1;
     padding: 13px;
     border: 1px solid #d6d8e6;
     border-radius: 4px;
     font-size: 16px;
     transition: all 0.2s ease-out;
-} */
+}
 
-/* .frm input:focus {
+.frm input:focus {
     outline: none;
     box-shadow: inset 2px 2px 5px 0 rgba(42, 45, 48, 0.12);
-} */
+}
 
 /* .frm input::placeholder {
-    color: gray;
+    color: #C8CDDF;
 } */
-.btn{
-    display: flex;
-    justify-content: space-around;
-    width: 30%;
-}
+
 button {
     align-content: center;
-    width: auto;
+    width: 50%;
     padding: 12px;
     font-size: 20px;
-    background: #1A2226;
-
+    background: #222D32;
+    
     color: #d98324;
     border: none;
     border-radius: 100px;
     cursor: pointer;
-    font-family: fantasy;
-    letter-spacing: 2px;
+    font-family: Arial, Helvetica, sans-serif;
     margin-top: 15px;
     transition: background 0.2s ease-out;
 }
@@ -84,7 +77,6 @@ button:hover {
 
 }
 
-
 @media(max-width: 458px) {
 
     body {
@@ -92,23 +84,18 @@ button:hover {
     }
 
     form {
-        background: #222D32;
+        background:#222D32;
         border: none;
         box-shadow: none;
         padding: 20px 0;
 
     }
 
-    button {
+    button{
         background-color: #1A2226;
     }
 
 }
-
-.lien {
-    color: white;
-}
-
 .eye {
     position: relative;
 }

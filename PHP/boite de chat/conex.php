@@ -18,7 +18,7 @@ if (!empty($mail) && !empty($mdp)) {
 
 
     if ($row == 0) {
-        echo "something wrong";
+        echo "Quelque chose est incorrect!";
     } else {
 
 
@@ -30,5 +30,5 @@ if (!empty($mail) && !empty($mdp)) {
         header('location:index.php');
     }
 } else {
-    echo "pls fill the login form";
+    echo "Merci de remplir les champs!";
 }
