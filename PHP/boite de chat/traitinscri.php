@@ -9,9 +9,7 @@ $nom = $_POST['nom'];
 $prenom = $_POST['prenom'];
 $pseudo = $_POST['pseudo'];
 $mail = $_POST['mail'];
-$mail2 = $_POST['mail2'];
 $pwd = $_POST['mdp'];
-$pwd2 = $_POST['mdp2'];
 
 
 if (!empty($nom) && !empty($prenom) && !empty($pseudo) && !empty($mail) && !empty($pwd)) {
